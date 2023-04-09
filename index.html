@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <title>Ariel Levita | Portfolio</title>
+</head>
+
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="topBar">
+    <div class="container-fluid d-flex flex-wrap justify-content-between">
+      <img src="/assets/APLogo-20-20_small.png" alt="logo argentina programa" width="114" height="40" class="px-2" />
+      <img src="/assets/LogosInti_small.png" alt="logo inti" width="140" height="35"
+        class="align-self-center me-auto px-2" />
+
+      <!-- Links -->
+      <div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon borderless"></span>
+        </button>
+        <ul class="navbar-nav collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Estudios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+          <!-- <li class="mx-1">
+            <button type="button" class="animated-button" id="btn-signIn" data-bs-toggle="modal" data-bs-target="#signInModal">
+              Editar
+            </button>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="signInModalLabel"></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">EN CONSTRUCCIÓN</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Encabezado -->
+  <header>
+    <div class="container" id="home">
+      <div class="row section-container d-flex align-items-center">
+        <!-- Texto -->
+        <div class="container col-md-6 m-0 p-5" id="header-right">
+          <h1 id="text-header-1">Hello World! I'm Ariel</h1>
+          <h3 id="text-header-2">Gracias por visitarme.</h3>
+          <p id="text-header-3">
+            Soy un docente, introduciéndome en el mundo del
+            <span class="texto-header-destacado">desarrollo web</span>. En
+            este momento, estoy enfocado en el aprendizaje
+            de lenguajes para el desarrollo
+            <span class="texto-header-destacado">full-stack</span>, y en la
+            construcción de pequeñas aplicaciones web.
+          </p>
+          <p id="text-header-4" class="mb-0">
+            Te invito a conocerme un poco &#128522;
+          </p>
+          <p id="text-header-5">Saludos!</p>
+          <p class="fs-2 text-center" id="signature">Ariel</p>
+        </div>
+
+        <!-- Imagen -->
+        <div class="container-fluid col-md-6 m-0 p-0" id="header-left">
+          <img src="/assets/banner-transp-vasocode.png" class="img-fluid p-5" alt="imagen de banner" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Acerca de -->
+    <section id="about">
+      <div class="container section-container">
+        <div>
+          <h2 class="text-uppercase fade-in from-left">acerca de mí</h2>
+        </div>
+        <div class="row d-flex align-items-center">
+          <div class="col-md-8 mb-3">
+            <p>
+              Si bien (formalmente) soy sólo un Profesor de Nivel Inicial, con
+              el tiempo pude ir ampliando mi campo laboral, ingresando también
+              a la docencia de Nivel Superior. Y como entendí que la educación
+              puede generar cambios reales en la vida de las personas, comencé
+              a estudiar en la Universidad, trabajando como ayudante en una
+              cátedra, y colaborando con equipos de Investigación en Ciencias
+              de la Educación.
+            </p>
+            <p>
+              Cuando en 2020, la situación de aislamiento trasladó la mayor
+              parte de las actividades a la virtualidad, descubrí que nunca
+              había habido una articulación real entre el ámbito educativo y
+              el del desarrollo tecnológico; y es por eso que decidí comenzar
+              a trabajar en el desarrollo web full-stack, para tratar de
+              brindar soluciones accesibles a problemas concretos.
+            </p>
+            <p>
+              En la actualidad, si bien continúo con mi trabajo y mis estudios
+              en el ámbito educativo, dedico gran parte de mi tiempo al
+              aprendizaje de lenguajes para el desarrollo de aplicaciones web,
+              a la vez que construyo pequeñas apps que me permitan ir
+              practicando, ganando experiencia, y prestando mayor atención a
+              los detalles.
+            </p>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center mb-3">
+            <img class="img-fluid rounded-circle border border-3" src="/assets/avatar-ariel.png"
+              alt="imagen de ariel levita" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiencia laboral -->
+    <section id="experience">
+      <div class="container section-container col-md-8">
+        <div>
+          <h2 class="text-uppercase fade-in from-left">
+            experiencia laboral
+          </h2>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExperience">
+          <div class="accordion-item shadow-sm my-4">
+            <h2 class="accordion-header mb-0" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <span class="mb-1 fw-bold">Bedel en Oficina de Estudiantes</span>
+                <small class="text-end px-2 ms-auto">jun/2021 - continúa</small>
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExperience">
+              <div class="accordion-body">
+                <p class="fw-bold">
+                  Ministerio de Educación de la Provincia de Chubut -
+                  Instituto Superior de Formación Docente N°809
+                </p>
+                <p>
+                  Si bien la Bedelía es el área responsable de gestionar administrativamente las trayectorias formativas de los estudiantes, promover acciones y acompañar estas trayectorias para fortalecer los procesos de ingreso, permanencia y egreso, cuando las y los bedeles ganamos los concursos para acceder al cargo, presentamos diferentes líneas de acción particulares que permiten fortalecer y mejorar las tareas de la oficina. En mi caso particular, las propuestas se centran en un aspecto educativo, que mejora el acceso de la y los estudiantes a información relevante para la toma de decisiones útiles en sus trayectorias, por un lado, y a la construcción de un sistema que permita digitalizar parte de la información de las trayectorias, facilitando el acceso por parte de los actores institucionales y aumentando la transparencia ante la necesidad de consultas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item shadow-sm my-4">
+            <h2 class="accordion-header mb-0" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <span class="mb-1 fw-bold">Docente de Nivel Superior</span>
+                <small class="text-end px-2 ms-auto">abr/2015 - jun/21</small>
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExperience">
+              <div class="accordion-body">
+                <p class="fw-bold">
+                  Ministerio de Educación de la Provincia de Chubut -
+                  Instituto Superior de Formación Docente N°809
+                </p>
+                <p>
+                  Dentro del Profesorado de Educación Inicial, estuve a cargo del dictado de dos unidades curriculares: el taller de “Producción de Recursos Didácticos para el Nivel Inicial” en donde, a diferencia del enfoque principalmente teórico que se utilizaba hasta el momento, se comenzó a utilizar una metodología de teoría-producción-socialización-retroalimentación, que permitió a las estudiantes formar parte del proceso educativo de sus compañeras, enriqueciendo la apropiación de los conocimientos; y la asignatura de “Sujetos de la Educación Inicial” en donde se pudieron incorporar diversos aspectos históricos y sociales, al abordaje fundamentalmente psicologicista que se realizaba hasta el momento.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item shadow-sm my-4">
+            <h2 class="accordion-header mb-0" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <span class="mb-1 fw-bold">
+                  Ayudante de 2da en cátedra de Psicología
+                </span>
+                <small class="text-end px-2 ms-auto">mar/2020 - mar/2023</small>
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExperience">
+              <div class="accordion-body">
+                <p class="fw-bold">
+                  Universidad Nacional de la Patagonia san Juan Bosco -
+                  Facultad de Humanidades y Ciencias Sociales
+                </p>
+                <p>
+                  El rol del ayudante de 2da está directamente dirigido a la formación de las y los estudiantes en docencia universitaria. En este sentido, mi tarea estuvo orientada la confección de guías y material de lectura para las y los estudiantes, participación en las clases, participación en la corrección de trabajos prácticos, y apoyo a estudiantes antes sus consultas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item shadow-sm my-4">
+            <h2 class="accordion-header mb-0" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                <span class="mb-1 fw-bold">
+                  Docente de Talleres de Eduación no-formal
+                </span>
+                <small class="text-end px-2 ms-auto">mar/2019 - mar/2020</small>
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExperience">
+              <div class="accordion-body">
+                <p class="fw-bold">Espacio Recreativo "La Jungla"</p>
+                <p>
+                  El Espacio de Juego fue una propuesta realizada en conjunto con una docente, dueña de un salón de eventos. Dentro de esta propuesta innovadora para la localidad, mi trabajo consistió en organizar e implementar las actividades recreativas, así como los talleres que el espacio ofrecía. El proyecto quedó trunco debido a la situación de aislamiento preventivo durante la pandemia de 2020-2021.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item shadow-sm my-4">
+            <h2 class="accordion-header mb-0" id="flush-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                <span class="mb-1 fw-bold">Maestro de Nivel Inicial</span>
+                <small class="text-end px-2 ms-auto">feb/2012 - feb/2019</small>
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExperience">
+              <div class="accordion-body">
+                <p class="fw-bold">
+                  Ministerio de Educación de la Provincia de Chubut - Jardines
+                  Maternales y Jardines de Infantes Provinciales
+                </p>
+                <p>
+                  Comenzar a trabajar en una región en donde el cuerpo docente no fue formado por especialistas en el nivel, implicó conciliar diferencias conceptuales respecto de las prácticas educativas. En lo particular, además del trabajo propio de la docencia, mi trabajo estuvo más centrado en ampliar el abanico de acción, realizando propuestas áulicas e institucionales desde diferentes enfoques conceptuales.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item shadow-sm my-4">
+            <h2 class="accordion-header mb-0" id="flush-headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                <span class="mb-1 fw-bold">Maestro de Sección</span>
+                <small class="text-end px-2 ms-auto">may/2009 - feb/2012</small>
+              </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+              data-bs-parent="#accordionFlushExperience">
+              <div class="accordion-body">
+                <p class="fw-bold">
+                  Ministerio de Educación del Gobierno de la Ciudad Autónoma
+                  de Buenos Aires - Jardines Maternales y Jardines de Infantes
+                </p>
+                <p>
+                  Mi primera experiencia como profesional de la educación fue esencial para fortalecer los aprendizajes construidos en el Profesorado. El trabajo amable y respetuoso con las familias me ayudó a deconstruir algunos estereotipos vinculados al rol masculino respecto del cuidado de niñas y niños pequeños, a la vez que me permitió implementar proyectos que hicieran foco sobre los aspectos educativos de la crianza de las y los más pequeños. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estudios -->
+    <section id="education">
+      <div class="container section-container col-md-8">
+        <div>
+          <h2 class="text-uppercase fade-in from-left">educación</h2>
+        </div>
+
+        <ul class="nav nav-tabs nav-justified justify-content-around mb-3">
+          <li class="nav-item d-flex align-items-stretch">
+            <a class="nav-link active" aria-current="page" data-bs-toggle="tab" href="#formalEducation">Educación
+              formal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#nonFormalEducation">Educación no formal</a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="formalEducation">
+            <div class="list-group-borderless g-2">
+              <div class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <p class="mb-1">
+                    Universidad Nacional de la Patagonia San Juan Bosco
+                  </p>
+                  <br />
+                  <small class="text-end ps-2">2015 - continúa</small>
+                </div>
+                <h5 class="mb-1">Prof. y Lic. en Ciencias de la Educación</h5>
+              </div>
+              <div class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <p class="mb-1">
+                    Inst. Sup. de Profesorado en Educación Inicial Sara C. de
+                    Eccleston
+                  </p>
+                  <br />
+                  <small class="text-end ps-2">2005 - 2007</small>
+                </div>
+                <h5 class="mb-1">Prof. de Educación Inicial</h5>
+              </div>
+              <div class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <p class="mb-1">Escuela Técnica ORT</p>
+                  <br />
+                  <small class="text-end ps-2">1995 - 2000</small>
+                </div>
+                <h5 class="mb-1">
+                  Bachiller Técnico Orientado en Gestión Administrativa
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-pane" id="nonFormalEducation">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="flex-fill noFormalBox" id="desarrolloBox">
+                  <h6>Desarrollo Web</h6>
+                  <p>
+                    <span class="courseTitle">Bootcamp Desarrollo Web Front End</span>
+                    [feb/23-abr/23] Argentina Programa + MindHub - Ministerio de Economía del Desarrollo.
+                  </p>
+                  <p>
+                    <span class="courseTitle">Desarrollo web Full-Stack (JavaScript + Node.js)</span>
+                    [ago/22-dic/22] Codo a Codo - Agencia de Aprendizaje a lo
+                    Largo de la Vida - Ministerio de Educación de la Ciudad
+                    Autónoma de Buenos Aires.
+                  </p>
+                  <p>
+                    <span class="courseTitle">#YoProgramo</span>
+                    [jul/22-ene/23] Argentina Programa - Ministerio de
+                    Desarrollo Productivo de la Nación.
+                  </p>
+                  <p>
+                    <span class="courseTitle">Nivel 8 de Inglés Técnico para Desarrolladores de Software (B1.2 MCER)</span>
+                    [dic/22-mar/23] Centro Universitario de Idiomas -
+                    Universidad de Buenos Aires
+                  </p>
+                </div>
+                <div class="flex-fill noFormalBox" id="docenciaBox">
+                  <h6>Docencia</h6>
+                  <p>
+                    <span class="courseTitle">Aulas Virtuales para el Nivel Superior</span>
+                    [sep/22-oct/22] Instituto Nacional de Formación Docente -
+                    Ministerio de Educación de la Nación.
+                  </p>
+                  <p>
+                    <span class="courseTitle">Hacia una pedagogía del cuidado. El abordaje en la
+                      escuela de las situaciones relativas al suicidio</span>
+                    [ago/22-sep/22] Instituto Nacional de Formación Docente -
+                    Ministerio de Educación de la Nación.
+                  </p>
+                </div>
+                <div class="flex-fill noFormalBox" id="universidadBox">
+                  <h6>Universidad</h6>
+                  <p>
+                    <span class="courseTitle">Investigación y escritura: características y
+                      estrategias para la comunicación del conocimiento</span>
+                    [nov/22-dic/22] Instituto Nacional de Formación Docente -
+                    Ministerio de Educación de la Nación.
+                  </p>
+                  <p>
+                    <span class="courseTitle">Ayudas Tecnológicas para el Estudio</span>
+                    [may/21-jul/21] Universidad Nacional de la Patagonia San Juan Bosco (UNPSJB).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills">
+      <div class="container section-container col-md-8">
+        <div>
+          <h2 class="text-uppercase fade-in from-left">habilidades</h2>
+        </div>
+        <div class="row d-flex justify-content-around text-center">
+          <div class="col">
+            <h5 class="text-uppercase">habilidades duras</h5>
+            <div class="row">
+              <div class="col">
+                <p>HTML</p>
+              </div>
+              <div class="col">
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>CSS</p>
+              </div>
+              <div class="col">
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>JavaScript</p>
+              </div>
+              <div class="col">
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>Bootstrap</p>
+              </div>
+              <div class="col">
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>Angular</p>
+              </div>
+              <div class="col">
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>Java</p>
+              </div>
+              <div class="col">
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>Spring Boot</p>
+              </div>
+              <div class="col">
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>Node.js</p>
+              </div>
+              <div class="col">
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>MySQL</p>
+              </div>
+              <div class="col">
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>Git / GitHub</p>
+              </div>
+              <div class="col">
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+                <i class="bi bi-star-fill estrella-off"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h5 class="text-uppercase">habilidades blandas</h5>
+            <div class="row">
+              <div class="col">
+                <p>Trabajo en equipo</p>
+              </div>
+              <div class="col">
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>Comprensión escrita</p>
+              </div>
+              <div class="col">
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>Expresión escrita</p>
+              </div>
+              <div class="col">
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>Seguridad en sí mismo</p>
+              </div>
+              <div class="col">
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>Estrategias para el aprendizaje</p>
+              </div>
+              <div class="col">
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+                <i class="bi bi-star-fill estrella-on"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="projects">
+      <div class="container section-container col-md-8">
+        <div>
+          <h2 class="text-uppercase fade-in from-left">proyectos</h2>
+          <div class="row d-flex flex-wrap align-items-center justify-content-center grid gap-3" id="cards">
+            <div class="card shadow">
+              <img src="assets/amazing-events-levita.vercel.app.png" class="card-img-top p-2" alt="amazing events cover">
+              <div class="card-body">
+                <h5 class="card-title">Amazing Events</h5>
+                <p class="card-text">Sitio web desarrollado con Vanilla JavaScript en el marco del Bootcamp Desarrollo Web Front End de Argentina Programa y MindHub.</p>
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="animated-button"><a href="https://amazing-events-levita.vercel.app/" target="_blank"></a>Ir al sitio</a></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card shadow">
+              <img src="assets/regular809.vercel.app.png" class="card-img-top p-2" alt="crtificado de alumno regular cover">
+              <div class="card-body">
+                <h5 class="card-title">Certificado ISFD 809</h5>
+                <p class="card-text">Página web desarrollada con Vanilla JavaScript para agilizar el acceso a los Certificado de Alumno Regular por parte de lxs estudiantes del Instituto.</p>
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="animated-button"><a href="https://regular809.vercel.app/" target="_blank">Ir al sitio</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact">
+      <div class="container section-container col-md-8">
+        <div>
+          <h2 class="text-uppercase fade-in from-left">contacto</h2>
+        </div>
+        <div class="container text-center">
+          <p>Si bien estoy priorizando mi formación en el desarrollo web por sobre la búsqueda laboral, considero que la inserción en el ámbito laboral ayuda a fortalecer aspectos que no pueden aprenderse a través del estudio, como el trabajo en equipo en contexto de trabajo, o la producción orientada por los requisito particulares de los clientes. Es por eso que, si te interesa contactar una persona con mis conocimientos y experiencia, te invito a darle click al botón.</p>
+          <button type="button" class="animated-button btn btn-lg shadow-sm ms-auto my-3"><a href="mailto:levita.ariel@gmail.com">Enviar correo</a></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Redes Sociales -->
+  <div id="redes">
+    <ul>
+      <li><a href="https://github.com/arielLevita"><i class="bi bi-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/ariel-levita/"><i class="bi bi-linkedin"></i></a></li>
+      <li><a href="https://www.facebook.com/ariel.esquel"><i class="bi bi-facebook"></i></a></li>
+      <li><a href="mailto:levita.ariel@gmail.com"><i class="bi bi-envelope-at"></i></a></li>
+    </ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/main.js"></script>
+</body>
+
+</html>
