@@ -394,6 +394,19 @@ nav {
     color: var(--color-analogo-magenta);
 }
 
+footer {
+    width: 100%;
+    background-color: var(--color-fondo-sombra-2);
+    text-align: center;
+    padding: 1rem;
+    color: var(--color-light);
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+
 @media screen and (max-width: 650px) {
     #redes {
         width: 100%;
