@@ -156,23 +156,12 @@ nav {
 
 /* --- EXPERIENCIA LABORAL --- */
 
-#experience div::-webkit-scrollbar {
-    width: 3px;
-}
-
-#experience div::-webkit-scrollbar-thumb {
-    background: linear-gradient(0deg, var(--color-texto-suave), var(--color-texto-fuerte));
-}
-
 .accordion-button:after {
     margin-left: 0;
 }
 
 #accordionFlushExperience {
-    /* max-height: 65vh; */
-    /* overflow: auto; */
-    padding: 0rem 1rem;
-    /* border: var(--color-texto-fuerte) solid 3px; */
+    padding: 0rem 1rem 0rem 2rem;
     border-radius: .5rem;
     -webkit-border-radius: .5rem;
     -moz-border-radius: .5rem;
@@ -191,11 +180,42 @@ nav {
 
 #experience .accordion-item {
     background: var(--color-fondo);
-    border: 1px solid var(--color-texto-suave);
+    /* border: 2px solid var(--color-texto-suave); */
+    position: relative;
+}
+
+#experience .accordion-item::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -1rem;
+    width: 2px;
+    height: 150%;
+    background-color: var(--color-texto-fuerte);
+}
+
+#experience .accordion-item:last-of-type::before {
+    height: 100%;
 }
 
 #experience .accordion-button {
     background-color: var(--color-fondo);
+    position: relative;
+}
+
+#experience .accordion-button::before {
+    position: absolute;
+    content: "";
+    top: 40%;
+    left: -1.25rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-texto-fuerte);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 #experience .accordion-body {
