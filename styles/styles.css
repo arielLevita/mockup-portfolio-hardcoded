@@ -62,6 +62,12 @@ nav {
     background-color: var(--color-fondo);
 }
 
+nav img {
+    aspect-ratio: 1 / 1;
+    width: 3rem;
+    margin-left: 1rem;
+}
+
 .nav-item {
     margin: 0 2px;
 }
@@ -146,6 +152,10 @@ nav {
 
 
 /* --- ACERCA DE --- */
+
+#about p {
+    padding-left: 1rem;
+}
 
 #about img {
     max-width: 250px;
@@ -238,43 +248,14 @@ nav {
 
 /* --- EDUCACIÓN --- */
 
-#education .nav-link {
-    text-decoration: none;
-    color: var(--color-light);
-    background-color: var(--color-fondo);
-    padding: 0.5rem 1rem;
-    text-transform: uppercase;
-    border-bottom: none;
-    font-size: x-large;
-    font-weight: 550;
-}
-
-#education .nav-tabs {
-    border-bottom: none;
-}
-
-#education .nav-tabs .nav-link:active, #education .nav-tabs .nav-link:focus {
-    border: solid 2px ;
-    border-top-color: var(--color-texto-fuerte);
-    border-left-color: var(--color-texto-fuerte);
-    border-right-color: var(--color-texto-fuerte);
-    border-bottom-color: transparent;
-    margin: 0px;
-}
-
-#education .nav-tabs .nav-link:hover {
-    border: solid 2px ;
-    border-top-color: transparent;
-    border-left-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: #bc88da;
-    margin: 0px;
-}
+/* #formalEducation .list-group-item, #nonFormalEducation > div {
+    border: 1px solid var(--color-fondo-sombra-2);
+} */
 
 #education .list-group-item {
     background-color: var(--color-fondo);
     color: var(--color-light);
-    border: 2px solid var(--color-texto-suave);
+    border: 1px solid var(--color-fondo-sombra-2);
     margin: 0;
     margin-bottom: 1rem;
     border-radius: 0.5rem;
@@ -284,38 +265,10 @@ nav {
     -o-border-radius: 0.5rem;
 }
 
-#education .list-group-item:nth-child(even) {
-    border: 2px solid var(--color-texto-fuerte);
-}
-
-.noFormalBox {
-    background-color: var(--color-fondo);
-    color: var(--color-light);
-    padding: 5px;
-    border: 2px solid var(--color-texto-suave);
-    border-radius: 0.5rem;
-    -webkit-border-radius: 0.5rem;
-    -moz-border-radius: 0.5rem;
-    -ms-border-radius: 0.5rem;
-    -o-border-radius: 0.5rem;
-}
-
-#nonFormalEducation h6 {
-    text-align: center;
-}
-
-#nonFormalEducation .row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-    gap: 1rem;
-}
-
-#docenciaBox {
-    border: 2px solid var(--color-texto-fuerte);
-}
-
 .courseTitle {
+    color: var(--color-texto-fuerte);
     font-style: italic;
+    font-weight: 500;
 }
 
 

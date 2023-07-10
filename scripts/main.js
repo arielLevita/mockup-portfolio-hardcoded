@@ -1,3 +1,7 @@
+// --------------------------------------
+// Animaciones de scroll
+// --------------------------------------
+
 const faders = document.querySelectorAll(".fade-in");
 const sliders = document.querySelectorAll(".slide-in");
 
