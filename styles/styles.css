@@ -159,6 +159,34 @@ nav img {
     padding: 0;
 }
 
+@media (max-width: 991px) {
+    .navbar-nav {
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transition: max-height 0.8s ease;
+
+        background: rgba( 35, 8, 51, 0.25 );
+        backdrop-filter: blur( 2.5px );
+        -webkit-backdrop-filter: blur( 2.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+        box-shadow: none;
+        padding: 0;
+        max-width: 96%;
+        margin-left: 2vw;
+    }
+
+    .navbar li {
+        padding: 0.5em 0;
+    }
+}
+
 
 
 
