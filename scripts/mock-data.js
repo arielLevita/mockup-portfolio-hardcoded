@@ -1,4 +1,4 @@
-export const PEOPLE = [{
+export const PEOPLE = {
     "id": 1,
     "firstName": "Ariel",
     "lastName": "Levita",
@@ -328,7 +328,7 @@ export const PEOPLE = [{
             "id": 1,
             "title": "Amazing Events",
             "description": "Sitio web desarrollado con Vanilla JavaScript en el marco del Bootcamp Desarrollo Web Front End de Argentina Programa y MindHub.",
-            "imageURL": "https://i.imgur.com/YjZS8Zm.png",
+            "imageURL": "https://i.postimg.cc/QCzSLtjP/amazing-events-levita-vercel-app.png",
             "linkToProject": "https://amazing-events-levita.vercel.app/",
             "linkToCode": "https://github.com/arielLevita/AmazingEvents_LEVITA",
         },
@@ -336,9 +336,17 @@ export const PEOPLE = [{
             "id": 2,
             "title": "Certificado ISFD 809",
             "description": "Página web desarrollada con Vanilla JavaScript para agilizar el acceso a los Certificado de Alumno Regular por parte de lxs estudiantes del Instituto.",
-            "imageURL": "https://i.imgur.com/7PaZHjP.png",
+            "imageURL": "https://i.postimg.cc/1XzPCWzB/regular809-vercel-app.png",
             "linkToProject": "https://regular809.vercel.app/",
             "linkToCode": "https://github.com/arielLevita/certificado-alumno-regular",
+        },
+        {
+            "id": 3,
+            "title": "La Etiqueta de Atrás",
+            "description": "Sitio web desarrollado con Vanilla JavaScript que tiene como propósito contribuir con la educación alimentaria.",
+            "imageURL": "https://i.postimg.cc/FzFYfNNG/laetiquetadeatras-vercel-app.png",
+            "linkToProject": "https://laetiquetasdeatras.vercel.app/",
+            "linkToCode": "https://github.com/arielLevita/laetiquetadeatras",
         }
     ]
-}]
+}

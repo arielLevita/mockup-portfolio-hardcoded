@@ -1,3 +1,18 @@
+import { projectCardsGenerator, hardSkillsGenerator, softSkillsGenerator } from "./section-generator.js";
+import { PEOPLE } from "./mock-data.js";
+
+const projectCardsContainer = document.getElementById("projectCards");
+const hardSkillsContainer = document.getElementById("hard-skills")
+const softSkillsContainer = document.getElementById("soft-skills")
+
+const projectsArray = PEOPLE.projects;
+const skillsArray = PEOPLE.skills;
+
+projectCardsGenerator(projectsArray, projectCardsContainer);
+hardSkillsGenerator(skillsArray, hardSkillsContainer);
+softSkillsGenerator(skillsArray, softSkillsContainer);
+
+
 // --------------------------------------
 // Animaciones de scroll
 // --------------------------------------
